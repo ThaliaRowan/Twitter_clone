@@ -27,7 +27,7 @@ function TweetBox() {
         <div className="tweetBox">
             <form>
                 <div className="tweetbox_Input">
-                <Avatar src="https://p.kindpng.com/picc/s/685-6851196_person-icon-grey-hd-png-download.png" />
+                <Avatar src="https://cdn-us.anidb.net/images/main/4318.png" />
                 <input onChange={(e) => setTweet(e.target.value)} value={tweet} placeholder="What's happening?" type="text" />
             
                 </div>
