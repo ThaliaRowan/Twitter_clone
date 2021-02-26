@@ -11,23 +11,23 @@ function Posts({displayName, username, verified, text, image, avatar}){
     return (
         <div className="post">
             <div className="postAvatar">
-                <Avatar src="https://pyxis.nymag.com/v1/imgs/6c0/570/056961772f9239c7ad26e784b020e410ae-beyonce.rsquare.w1200.jpg"/> 
+                <Avatar src={avatar}/> 
             </div>
             <div className="postBody">
                 <div className="postHeader">
                     <div className="headerText">
                         <h3>
-                            Beyonce{" "}
+                            {displayName}{" "}
                             <span className="headerSpecial">
-                                <CheckCircleIcon className="postBadge" fontSize="small" /> @beyonce
+                                {verified && <CheckCircleIcon className="postBadge" fontSize="small" />} @{username}
                             </span> 
                         </h3>
                     </div>
                     <div className="postHeaderDescription">
-                        <p>I love using REACT!</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://cdn.shopify.com/s/files/1/0848/8898/files/beyonce-dance_large.gif?v=1484659922" alt="" /> 
+                <img src={image} alt="" /> 
                 <div className="postFoot">
                     <ChatBubbleOutlineIcon fontSize="small"/>
                     <RepeatIcon fontSize="small"/>
