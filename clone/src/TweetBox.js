@@ -16,7 +16,7 @@ function TweetBox() {
             verified: true,
             text: tweet,
             image: tweetImage,
-            avatar: "https://cdn-us.anidb.net/images/main/4318.png"
+            avatar: "https://i.pinimg.com/originals/ff/a9/d2/ffa9d2dd2cd0f773e9b7ef59671116f0.jpg"
         });
 
         setTweet("");
@@ -27,7 +27,7 @@ function TweetBox() {
         <div className="tweetBox">
             <form>
                 <div className="tweetbox_Input">
-                <Avatar src="https://cdn-us.anidb.net/images/main/4318.png" />
+                <Avatar src="https://i.pinimg.com/originals/ff/a9/d2/ffa9d2dd2cd0f773e9b7ef59671116f0.jpg" />
                 <input onChange={(e) => setTweet(e.target.value)} value={tweet} placeholder="What's happening?" type="text" />
             
                 </div>
